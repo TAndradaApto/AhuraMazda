@@ -1,0 +1,52 @@
+@use "../utilities/variables" as v;
+
+.tituloPrincipal{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: v.$colorPrimario;
+    margin: 2rem;
+    background-color: v.$colorSecundario;
+}
+
+.mosaicoIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    article{
+        text-align: center;
+        padding: 1.5rem;
+        h2{
+            text-align: start;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+/*
+Ahora utilizo las clases particulares de las section para agregarle los colores
+*/
+.qsSection{
+    background-color: v.$colorSecundario;
+    color: v.$colorPrimario;
+}
+.deSection{
+    background-color: v.$colorPrimario;
+    color: v.$colorFondo;
+    h2{
+        color: v.$colorSecundario;
+    }
+}
+.pSection{
+    background-color: v.$colorSecundario;
+    color: v.$colorPrimario;
+}
+.aSection{
+    background-color: v.$colorPrimario;
+    color: v.$colorFondo;
+    h2{
+        color: v.$colorSecundario;
+    }
+}

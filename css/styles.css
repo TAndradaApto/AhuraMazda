@@ -1,0 +1,126 @@
+/*
+Tipografia
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+/*
+Paleta de colores de la web
+*/
+/*
+Defino las caracteristicas generales que tendra el body para toda la web.
+*/
+body {
+  background-color: #FBF7F0;
+  font-family: "Fraunces", serif;
+  /*esto es para evitar el scroll horizontal de los titulos principales de las paginas*/
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /*Color del fondo de la barra de navegacion*/
+  background-color: #FBF7F0;
+}
+.navbar .navbar-brand {
+  /*Logo de la empresa*/
+}
+.navbar .navbar-brand img {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 2px solid #2E6B7A;
+}
+.navbar-nav .nav-item {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #2E6B7A;
+  transition: 0.2s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+@media (min-width: 900px) {
+  .navbar-nav .nav-item {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 900px) {
+  .navbar-nav {
+    gap: 3rem;
+  }
+}
+
+.navbar-toggler {
+  color: #2E6B7A;
+  border-color: #2E6B7A;
+}
+
+.tituloPrincipal {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  color: #2E6B7A;
+  margin: 2rem;
+  background-color: #EECA75;
+}
+
+.mosaicoIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.mosaicoIndex article {
+  text-align: center;
+  padding: 1.5rem;
+}
+.mosaicoIndex article h2 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/*
+Ahora utilizo las clases particulares de las section para agregarle los colores
+*/
+.qsSection {
+  background-color: #EECA75;
+  color: #2E6B7A;
+}
+
+.deSection {
+  background-color: #2E6B7A;
+  color: #FBF7F0;
+}
+.deSection h2 {
+  color: #EECA75;
+}
+
+.pSection {
+  background-color: #EECA75;
+  color: #2E6B7A;
+}
+
+.aSection {
+  background-color: #2E6B7A;
+  color: #FBF7F0;
+}
+.aSection h2 {
+  color: #EECA75;
+}
+
+/*# sourceMappingURL=styles.css.map */

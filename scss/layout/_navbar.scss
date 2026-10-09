@@ -1,0 +1,50 @@
+@use "../utilities/variables" as v;
+
+
+.navbar {
+    /*Color del fondo de la barra de navegacion*/
+    background-color: v.$colorFondo;
+
+    .navbar-brand {
+
+        /*Logo de la empresa*/
+        img {
+            width: 150px;
+            border-radius: 100%;
+        }
+    }
+}
+
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 2px solid v.$colorPrimario;
+
+    .nav-item{
+        font-weight: 700;
+        font-size: 1rem;
+        
+        .nav-link{
+            color: v.$colorPrimario;
+            transition: 0.2s;
+            &:hover{
+                text-decoration: underline;
+                transform: scale(1.1);
+            }
+        }
+
+        @media (min-width:900px){
+            font-size: 1.3rem;
+        }
+    }
+    @media (min-width:900px) {
+        gap: 3rem;
+    }
+}
+
+.navbar-toggler{
+    color: v.$colorPrimario;
+    border-color: v.$colorPrimario;
+}
